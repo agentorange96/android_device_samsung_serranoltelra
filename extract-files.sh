@@ -1,5 +1,5 @@
 #!/bin/sh
-export DEVICE=serranolteusc
+export DEVICE=serranoltelra
 export VENDOR=samsung
 
 set -e

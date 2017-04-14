@@ -33,11 +33,11 @@ import com.android.internal.telephony.cdma.CdmaInformationRecords.CdmaSignalInfo
 import com.android.internal.telephony.cdma.SignalToneUtil;
 
 /**
- * RIL customization for Galaxy S4 Mini (LTE USC) device
+ * RIL customization for Galaxy S4 Mini (LTE LRA) device
  *
  * {@hide}
  */
-public class SerranoLTEUSCRIL extends RIL {
+public class SerranoLTELRARIL extends RIL {
 
     private static final int RIL_REQUEST_DIAL_EMERGENCY = 10016;
     private static final int RIL_UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED = 1036;
@@ -46,12 +46,12 @@ public class SerranoLTEUSCRIL extends RIL {
     private static final int RIL_UNSOL_WB_AMR_STATE = 11017;
     private static final int RIL_UNSOL_RESPONSE_HANDOVER = 11021;
 
-    public SerranoLTEUSCRIL(Context context, int networkMode, int cdmaSubscription) {
+    public SerranoLTELRARIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription, null);
         mQANElements = 6;
     }
 
-    public SerranoLTEUSCRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
+    public SerranoLTELRARIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
         super(context, networkMode, cdmaSubscription, instanceId);
         mQANElements = 6;
     }
